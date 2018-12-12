@@ -1,0 +1,23 @@
+.modal-menu
+  display: none
+  background-color: $bg-color
+  width: 250px
+  padding:
+    top: 70px
+    bottom: 10px
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 0
+  &_visible
+    display: block
+  &__menu
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+    .header__menu-item
+      margin-bottom: 30px
+  &__container
+    margin-left: 50px
+
+  
