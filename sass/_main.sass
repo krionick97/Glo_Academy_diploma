@@ -3,19 +3,21 @@
     display: flex
     justify-content: space-between
     padding:
-      top: 125px
-      bottom: 101px
+      top: 115px
+      bottom: 77px
 
   &__title-block
     color: #ffffff
+    display: inline-block
   &__title
     font-size: 48px
     line-height: 1.25
     max-width: 510px
-    margin-bottom: 49px
+    margin-bottom: 30px
   &__subtitle
     font-size: 20px
     margin-bottom: 63px
+    // display: inline-block
 
   &__item
     display: flex
@@ -36,18 +38,21 @@
   &__item-text
     font-size: 15px
     line-height: normal
+    text-align: left
     
   &__request
+    margin-top: 10px
     display: inline-block
-    height: 370px
+    width: 234px
+    height: 360px
     background-color: #ffffff
     padding:
-      top: 40px
-      bottom: 43px
-      left: 55px
-      right: 55px
+      top: 26px
+      bottom: 26px
+      left: 39px
+      right: 39px
     &-container
-      max-width: 234px
+      max-width: 260px
       margin: 0 auto
     &-title
       font-size: 18px
@@ -61,6 +66,13 @@
     margin-bottom: 15px
   &__button
     margin-top: 5px
+    color: #ffffff
+    background-color: $button-color
+    border: none
+    &:hover 
+      background-color: lighten($button-color, 5%)
+      cursor: pointer
+
     
 
 

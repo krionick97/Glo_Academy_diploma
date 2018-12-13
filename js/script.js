@@ -14,6 +14,6 @@ $(document).ready(function () {
   //   $('.modal-menu').removeClass('modal-menu_visible');
   // });
 
-  $('.link').click(function () {return false;});
+  // $('.link').click(function () {return false;});
 
 });
