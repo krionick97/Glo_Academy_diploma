@@ -144,7 +144,7 @@
   display: none;
   padding-top: 12px;
   padding-bottom: 10px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header-mobile__container {
@@ -164,6 +164,7 @@
       -ms-flex-align: center;
           align-items: center;
   color: #ffffff;
+  z-index: 2;
 }
 
 .header-mobile__btn-menu p {
@@ -173,7 +174,6 @@
       -ms-flex-align: center;
           align-items: center;
   line-height: 0;
-  z-index: 2;
 }
 
 .header-mobile__btn-menu p:hover {
@@ -237,7 +237,7 @@
 }
 
 .header-mobile__contacts {
-  z-index: -1;
+  z-index: 0;
 }
 
 .header-mobile__contacts .header__phone {
@@ -265,7 +265,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 0;
+  z-index: 1;
 }
 
 .modal-menu_visible {
@@ -536,11 +536,13 @@
 }
 
 body {
-  background-image: url("../img/main-scr/main-screen-img.png");
-  background-repeat: no-repeat;
-  background-position: top;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-size: 14px;
+}
+
+.bg-image {
+  background-image: url("../img/main-scr/main-screen-img.png");
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -555,6 +557,10 @@ body {
 @media (max-width: 1200px) {
   .container {
     max-width: 90%;
+  }
+  .var-maquette__table {
+    max-width: 800px;
+    margin: auto;
   }
 }
 
