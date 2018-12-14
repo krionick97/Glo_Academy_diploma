@@ -6,7 +6,9 @@ $(document).ready(function () {
     $(this).toggleClass('header-mobile__btn-menu_active');
     $('.modal-menu').toggleClass('modal-menu_visible');
   });
-
+  
   // $('.link').click(function () {return false;});
+
+  $('.real-projects__slider').slick(); //slider
 
 });

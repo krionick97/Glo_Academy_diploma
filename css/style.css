@@ -565,6 +565,72 @@
   text-align: center;
 }
 
+.real-projects__slider {
+  display: block;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.real-projects__slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.real-projects__slider-item img {
+  width: 410px;
+  height: 340px;
+  margin-right: 80px;
+}
+
+.real-projects__slider-title {
+  font-size: 24px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 53px;
+}
+
+.real-projects__slider-descr span {
+  font-size: 12px;
+  color: #7f7f7f;
+}
+
+.real-projects__slider-descr p {
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+.real-projects__slider-descrBlock > .real-projects__slider-descr:nth-child(2) {
+  margin-bottom: 60px;
+}
+
+.real-projects__slider-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 300px;
+}
+
+.real-projects__slider-button {
+  position: absolute;
+  bottom: 0;
+  left: 495px;
+  color: #ffffff;
+  background-color: #23bac1;
+  border: none;
+  width: 216px;
+  height: 60px;
+}
+
+.real-projects__slider-button:hover {
+  background-color: #27cfd7;
+  cursor: pointer;
+}
+
 body {
   font-family: 'Proxima Nova Regular', sans-serif;
   font-size: 14px;

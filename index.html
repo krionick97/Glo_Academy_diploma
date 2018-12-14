@@ -7,11 +7,7 @@
   <link rel="shortcut icon" href="img/shrotcut-icon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <title>Изготовление макетов</title>
 </head>
 <body>
@@ -38,7 +34,7 @@
     </header>  <!--Header-->
     <!--////////////////////////////////////////////-->
   
-    <section class="modal-menu">
+    <div class="modal-menu">
       <div class="modal-menu__container">
         <div class="header__menu modal-menu__menu">
           <a href="#" class="link header__menu-item">Главная</a>
@@ -51,7 +47,7 @@
       
         
       </div> <!--Modal-menu Container-->  
-      </section> <!--Modal Menu-->
+    </div> <!--Modal Menu-->
       <!--////////////////////////////////////////////-->  
   
     <header class="header-mobile">
@@ -103,7 +99,7 @@
             <form action="#" id="form_id" class="form main__form">
               <input type="text" required name="user_name" class="input input-name main__form-input" placeholder="Ваше имя">
               <input type="tel" required name="user_phone" class="input input-phone main__form-input" placeholder="Контактный телефон">
-              <input type="mailto:example@example.com" required name="user_phone" class="input input-email main__form-input" placeholder="Электронная почта">
+              <input type="email" required name="user_phone" class="input input-email main__form-input" placeholder="Электронная почта">
             </form> <!--Form-->
             <button form="form_id" type="submit" class="button main__button">Оставить заявку</button>
           </div>
@@ -215,12 +211,146 @@
       <h2 class="section-title real-projects__section-title">Реализованные проекты</h2>
       <h3 class="section-subtitle real-projects__subtitle">Более 100 компаний уже решают свои бизнес – задачи с помощью наших макетов</h3>
 
+      <div class="real-projects__slider">
+
+        <div class="real-projects__slider-item">
+          <img src="img/real-projects/artek.jpeg" alt="Артек">
+          <div class="real-projects__slider-descrBlock">
+            <h3 class="real-projects__slider-title">Порт Артек</h3>
+
+            <div class="real-projects__slider-descr">
+              <span>Описание:</span>
+              <p>Презентация порта Артек для первых лиц государства</p>
+            </div> <!--Описание-->
+
+            <div class="real-projects__slider-data">
+              <div class="real-projects__slider-descr">
+                <span>Масштаб:</span>
+                <p>1:200</p>
+              </div> <!--Масштаб-->
+
+              <div class="real-projects__slider-descr">
+                <span>Размер:</span>
+                <p>1000х2000</p>
+              </div> <!--Размер-->
+
+              <div class="real-projects__slider-descr">
+                <span>Срок изготовления:</span>
+                <p>40 дней</p>
+              </div> <!--Срок изготовления-->
+            </div> <!--Data-->
+
+          </div> <!--Description Block-->
+          <button class="button real-projects__slider-button">Заказать макет</button>
+        </div> <!--Slider Item-->
+
+        <div class="real-projects__slider-item">
+          <img src="img/real-projects/rutah-complex.jpg" alt="Рута">
+          <div class="real-projects__slider-descrBlock">
+            <h3 class="real-projects__slider-title">Центр Рута</h3>
+
+            <div class="real-projects__slider-descr">
+              <span>Описание:</span>
+              <p>Бизнес-центр Рута в Индии</p>
+            </div> <!--Описание-->
+
+            <div class="real-projects__slider-data">
+              <div class="real-projects__slider-descr">
+                <span>Масштаб:</span>
+                <p>1:200</p>
+              </div> <!--Масштаб-->
+
+              <div class="real-projects__slider-descr">
+                <span>Размер:</span>
+                <p>1200х1860</p>
+              </div> <!--Размер-->
+
+              <div class="real-projects__slider-descr">
+                <span>Срок изготовления:</span>
+                <p>40 дней</p>
+              </div> <!--Срок изготовления-->
+            </div> <!--Data-->
+
+          </div> <!--Description Block-->
+          <button class="button real-projects__slider-button">Заказать макет</button>
+        </div> <!--Slider Item-->
+
+        <div class="real-projects__slider-item">
+          <img src="img/real-projects/continent.jpg" alt="Континент">
+          <div class="real-projects__slider-descrBlock">
+            <h3 class="real-projects__slider-title">Континент</h3>
+
+            <div class="real-projects__slider-descr">
+              <span>Описание:</span>
+              <p>Жилой комплекс Континент</p>
+            </div> <!--Описание-->
+
+            <div class="real-projects__slider-data">
+              <div class="real-projects__slider-descr">
+                <span>Масштаб:</span>
+                <p>1:200</p>
+              </div> <!--Масштаб-->
+
+              <div class="real-projects__slider-descr">
+                <span>Размер:</span>
+                <p>980х1140</p>
+              </div> <!--Размер-->
+
+              <div class="real-projects__slider-descr">
+                <span>Срок изготовления:</span>
+                <p>40 дней</p>
+              </div> <!--Срок изготовления-->
+            </div> <!--Data-->
+
+          </div> <!--Description Block-->
+          <button class="button real-projects__slider-button">Заказать макет</button>
+        </div> <!--Slider Item-->
+
+        <div class="real-projects__slider-item">
+          <img src="img/real-projects/hospital.jpg" alt="Mediko">
+          <div class="real-projects__slider-descrBlock">
+            <h3 class="real-projects__slider-title">Клинический центр Mediko</h3>
+
+            <div class="real-projects__slider-descr">
+              <span>Описание:</span>
+              <p>Корпус частного клинического центра Mediko</p>
+            </div> <!--Описание-->
+
+            <div class="real-projects__slider-data">
+              <div class="real-projects__slider-descr">
+                <span>Масштаб:</span>
+                <p>1:200</p>
+              </div> <!--Масштаб-->
+
+              <div class="real-projects__slider-descr">
+                <span>Размер:</span>
+                <p>970х1135</p>
+              </div> <!--Размер-->
+
+              <div class="real-projects__slider-descr">
+                <span>Срок изготовления:</span>
+                <p>40 дней</p>
+              </div> <!--Срок изготовления-->
+            </div> <!--Data-->
+
+          </div> <!--Description Block-->
+          <button class="button real-projects__slider-button">Заказать макет</button>
+        </div> <!--Slider Item-->
+
+      </div> <!--Slider-->
 
     </div> <!--Section Container-->
-
+    
   </section> <!--Real Projects-->
   <!--////////////////////////////////////////////-->
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+
+  <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!--Slider-->
 
 </body>
 </html>

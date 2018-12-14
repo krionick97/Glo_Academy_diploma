@@ -12,3 +12,55 @@
   &__subtitle
     margin: 0 auto 99px
     text-align: center
+
+  &__slider
+    display: block
+    margin: 0 auto
+    max-width: 900px
+    &-item
+      // margin: 0 auto
+      display: flex
+      position: relative
+      img
+        width: 410px
+        height: 340px
+        margin-right: 80px
+    &-title
+      font-size: 24px
+      +semibold
+      margin-bottom: 53px
+    &-descr
+      span
+        font-size: 12px
+        color: #7f7f7f
+      p
+        margin-top: 18px
+        font-size: 16px
+    &-descrBlock > &-descr:nth-child(2)
+      margin-bottom: 60px
+
+    &-data
+      display: flex
+      justify-content: space-between
+      min-width: 300px
+
+
+  
+
+  
+
+
+
+
+    &-button
+      position: absolute
+      bottom: 0
+      left: 495px
+      color: #ffffff
+      background-color: $button-color
+      border: none
+      width: 216px
+      height: 60px
+      &:hover 
+        background-color: lighten($button-color, 5%)
+        cursor: pointer
