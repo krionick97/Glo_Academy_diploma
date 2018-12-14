@@ -609,6 +609,35 @@ body {
   .var-maquette__subtitle {
     margin-bottom: 40px;
   }
+  .var-maquette__item:hover {
+    -webkit-box-shadow: 0px 0px 0px 0 black;
+            box-shadow: 0px 0px 0px 0 black;
+    -webkit-transition: 0;
+    transition: 0;
+  }
+  .var-maquette__item:hover .var-maquette__img {
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    opacity: 0.8;
+    -webkit-transition: 0;
+    transition: 0;
+  }
+  .var-maquette__item:hover .var-maquette__button {
+    background: none;
+    border: 1px solid #e8e8e8;
+    color: #000000;
+    cursor: default;
+    -webkit-transition: 0;
+    transition: 0;
+  }
+  .var-maquette__item:hover .var-maquette__button:hover {
+    background: none;
+    border: 1px solid #e8e8e8;
+    color: #000000;
+    cursor: default;
+    -webkit-transition: 0;
+    transition: 0;
+  }
 }
 
 @media (max-width: 842px) {

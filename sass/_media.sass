@@ -44,6 +44,31 @@
       margin-bottom: 50px
     &__subtitle
       margin-bottom: 40px
+    &__item
+      &:hover
+        box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 1);
+        transition: 0
+        .var-maquette__img
+          filter: grayscale(100%)
+          opacity: 0.8
+          transition: 0
+        .var-maquette__button
+          background: none
+          border: 1px solid $bg-color
+          color: $text-color
+          cursor: default
+          transition: 0
+          &:hover
+            background: none
+            border: 1px solid $bg-color
+            color: $text-color
+            cursor: default
+            transition: 0
+
+  
+
+
+
 
 @media (max-width: 842px)
   .var-maquette
