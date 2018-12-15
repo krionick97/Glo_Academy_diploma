@@ -719,7 +719,8 @@ body {
 
 @media (max-width: 1080px) {
   .real-projects__slider-item {
-    margin: 0 50px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .real-projects__slider-item img {
     width: 310px;
@@ -941,6 +942,19 @@ body {
   }
   .var-maquette__img {
     width: 290px;
+  }
+  .real-projects__slider-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .real-projects__slider-data {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .real-projects__slider-data-descr {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
