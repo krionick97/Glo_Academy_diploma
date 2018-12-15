@@ -14,6 +14,7 @@
     text-align: center
 
   &__slider
+    position: relative
     display: block
     margin: 0 auto
     max-width: 900px
@@ -44,12 +45,13 @@
     &-data
       display: flex
       justify-content: space-between
-      min-width: 300px
+      // min-width: 300px
+      max-width: 600px
 
     &-button
       position: absolute
       bottom: 0
-      left: 495px
+      left: 490px
       color: #ffffff
       background-color: $button-color
       border: none
@@ -58,3 +60,27 @@
       &:hover 
         background-color: lighten($button-color, 5%)
         cursor: pointer
+
+.arrow
+  content: ''
+  display: block
+  width: 14px
+  height: 26px
+  position: absolute
+  // bottom: 45%
+  z-index: 1
+  // left: 50%
+  &:hover
+    cursor: pointer    
+  &-right
+    right: -120px
+    bottom: 50%
+    transform: translateY(13px)
+    background-image: url('../img/real-projects/arrow-right.png')
+    background-size: 100%
+  &-left
+    left: -120px
+    top: 50%
+    transform: translateY(-13px)
+    background-image: url('../img/real-projects/arrow-left.png')
+    background-size: 100%

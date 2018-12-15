@@ -9,6 +9,12 @@ $(document).ready(function () {
   
   // $('.link').click(function () {return false;});
 
-  $('.real-projects__slider').slick(); //slider
+  $('.real-projects__slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: '<div class="arrow arrow-right"></div>',
+    prevArrow: '<div class="arrow arrow-left"></div>'
+  }); //slider
 
 });
