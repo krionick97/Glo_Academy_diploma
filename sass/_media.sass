@@ -203,6 +203,21 @@
     padding-top: 0
 
 @media (max-width: 600px)
+  .real-projects
+    padding:
+      top: 40px
+      bottom: 100px
+
+
+  
+
+  .arrow
+    &-right
+      transform: translateY(56px)
+    &-left
+      transform: translateY(30px)
+
+
   .achivments
     padding:
       top: 50px
@@ -214,6 +229,7 @@
       align-items: center
     &__item
       margin-bottom: 50px
+
 
 @media (max-width: 480px)
   .main
@@ -245,10 +261,14 @@
       &-item
         margin:
           left: 0
-          right: 0          
+          right: 0
+      &-descr
+        text-align: center
       &-data
         flex-direction: column
-        &-descr 
-          margin-bottom: 20px
+      &-data > &-descr 
+        margin-bottom: 30px
+      &-data
+        margin: 0 auto 70px
 
   
