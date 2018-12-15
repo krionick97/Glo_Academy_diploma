@@ -775,6 +775,44 @@
   display: none;
 }
 
+.footer {
+  background-color: #000000;
+  padding-top: 50px;
+  padding-bottom: 58px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__geopoint {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__geopoint img {
+  margin-right: 19px;
+}
+
+.footer__geopoint p {
+  font-size: 13px;
+  line-height: normal;
+  max-width: 185px;
+}
+
 body {
   font-family: 'Proxima Nova Regular', sans-serif;
   font-size: 14px;
@@ -797,6 +835,11 @@ body {
 
 .section-subtitle {
   font-size: 20px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 416px;
 }
 
 @media (max-width: 1250px) {
@@ -1155,6 +1198,23 @@ body {
   }
   .our-clients__section-title {
     margin-bottom: 30px;
+  }
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .footer__geopoint {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__geopoint img {
+    margin: 0 auto 12px;
+  }
+  .footer__geopoint p {
+    text-align: center;
+    max-width: 90px;
   }
 }
 /*# sourceMappingURL=style.css.map */
