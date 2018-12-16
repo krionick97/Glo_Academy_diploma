@@ -667,6 +667,7 @@
   color: #ffffff;
   background-image: url("../img/achivments/achivments-bg-img.jpg");
   background-size: cover;
+  background-color: #000000;
   padding-top: 108px;
   padding-bottom: 36px;
 }
@@ -810,7 +811,6 @@
 .footer__geopoint p {
   font-size: 13px;
   line-height: normal;
-  max-width: 185px;
 }
 
 body {
@@ -822,6 +822,7 @@ body {
   background-image: url("../img/main-scr/main-screen-img.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000000;
 }
 
 .container {
@@ -1203,18 +1204,15 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  .footer__geopoint {
+  .footer__container {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
-  .footer__geopoint img {
-    margin: 0 auto 12px;
-  }
-  .footer__geopoint p {
+  .footer__contacts {
     text-align: center;
-    max-width: 90px;
+    margin-bottom: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
