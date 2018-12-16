@@ -85,16 +85,16 @@ $(document).ready(function () {
   });
 
 
-  $('form').submit(function(event) {    
+  $('.form').submit(function(event) {    
     event.preventDefault();
     $.ajax({
       type: "POST",
-      url: '../mailer/PHPmailer/smart.php',
+      url: "../Glo_Academy_diploma/mailer/PHPmailer/smart.php",
       data: $(this).serialize(), 
-    }).done(function(){
+    }).done(function() {
       $(this).find("input").val("");
       alert("Форма отправлена. Спасибо!");
-      $('form').trigger("reset");
+      $(".form").trigger("reset");
     });
     return false;
   });
