@@ -5,13 +5,15 @@
 @import 'var-mixin'
 @import 'header'
 @import 'header-mobile'
-@import 'modal-menu'
 @import 'main'
 @import 'var-maquette'
 @import 'real-projects'
 @import 'achivments'
 @import 'our-clients'
 @import 'footer'
+@import 'modal-callback'
+@import 'order-maq'
+@import 'modal-menu'
 
 body
   font-family: 'Proxima Nova Regular', sans-serif
@@ -36,6 +38,23 @@ body
 .map iframe
   width: 100%
   height: 416px
+
+.modal
+  width: 100%
+  height: 100%
+  position: fixed
+  background-color: rgba(#000, 0.52)
+  left: 0
+  top: 0
+  z-index: 3
+
+  &__close
+    position: absolute
+    img
+      width: 16px
+      height: auto
+    &:hover
+      cursor: pointer
 
 
 @import 'media'
