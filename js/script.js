@@ -85,5 +85,18 @@ $(document).ready(function () {
   });
 
 
-  
+  $('form').submit(function(event) {    
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: '../mailer/PHPmailer/smart.php',
+      data: $(this).serialize(), 
+    }).done(function(){
+      $(this).find("input").val("");
+      alert("Форма отправлена. Спасибо!");
+      $('form').trigger("reset");
+    });
+    return false;
+  });
+
 }); //Document Ready

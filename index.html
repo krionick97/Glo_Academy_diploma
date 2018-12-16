@@ -14,7 +14,6 @@
   <script src="js/script.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!--Slider-->
-  
   <title>Изготовление макетов</title>
 </head>
 <body>
@@ -87,12 +86,12 @@
         <div class="main__request">
           <div class="main__request-container">
             <h2 class="main__request-title">Оставьте заявку и получите расчет стоимость макета в&nbsp;течение&nbsp;<span>30 минут</span></h2>
-            <form action="#" id="form_id" class="form main__form">
+            <form action="mailer/PHPmailer/smart.php" method="POST" id="form_id" class="form main__form">
               <input type="text" required name="user_name" class="input input-name main__form-input" placeholder="Ваше имя">
               <input type="tel" required name="user_phone" class="input input-phone main__form-input" placeholder="Контактный телефон">
-              <input type="email" required name="user_phone" class="input input-email main__form-input" placeholder="Электронная почта">
+              <input type="email" required name="user_email" class="input input-email main__form-input" placeholder="Электронная почта">
+              <button type="submit" class="button main__button">Оставить заявку</button>
             </form> <!--Form-->
-            <button form="form_id" type="submit" class="button main__button">Оставить заявку</button>
           </div>
           
         </div> <!--Main Form-->
@@ -478,21 +477,14 @@
     </div> <!--Container-->
   </section> <!--Our Clients-->
   <!--////////////////////////////////////////////-->
-  
-  <div class="map-block">
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1119.8632603425626!2d37.53687502995211!3d55.850060338444095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537bf9668ac29%3A0x18dfd9d5b810d58b!2z0JDQstGC0L7QvNC-0YLQvtGA0L3QsNGPINGD0LsuLCA00JAg0YHRgtGA0L7QtdC90LjQtSAyMSwg0JzQvtGB0LrQstCwLCAxMjU0Mzg!5e0!3m2!1sru!2sru!4v1544902260271" allowfullscreen></iframe>
-    </div>
-  </div> <!--Map-->
-  <!--////////////////////////////////////////////-->
-  
+
   <section class="modal modal-callback">
     <div class="modal-callback__dialog">
       <h2 class="modal-callback__title">Закажите обратный звонок</h2>
-      <form action="#" id="form_id_callback" class="form modal-callback__form">
+      <form action="mailer/PHPmailer/smart.php" method="POST" id="form_id_callback" class="form modal-callback__form">
         <input type="tel" required name="user_phone" class="input input-phone main__form-input" placeholder="Введите номер телефона">
+        <button type="submit" class="button modal-callback__btn">Заказать</button>
       </form> <!--Form-->
-      <button form="form_id_callback" type="submit" class="button modal-callback__btn">Заказать</button>
       
       <div class="modal__close modal-callback__close">
         <img src="img/close-icon.png" alt="Close">
@@ -505,11 +497,11 @@
   <section class="modal order-maq">
     <div class="order-maq__dialog">
       <h2 class="order-maq__title">Расчёт стоимости макета</h2>
-      <form action="#" id="form_id_order-maq" class="form main__form">
+      <form action="mailer/PHPmailer/smart.php" method="POST" id="form_id_order-maq" class="form main__form">
         <input type="text" required name="user_name" class="input input-name main__form-input" placeholder="Ваше имя">
         <input type="tel" required name="user_phone" class="input input-phone main__form-input" placeholder="Контактный телефон">
-        <input type="email" required name="user_phone" class="input input-email main__form-input" placeholder="Электронная почта">
-        <button form="form_id_order-maq" type="submit" class="button order-maq__button">Оставить заявку</button>
+        <input type="email" required name="user_email" class="input input-email main__form-input" placeholder="Электронная почта">
+        <button type="submit" class="button order-maq__button">Оставить заявку</button>
       </form> <!--Form--> 
       <div class="modal__close modal-callback__close">
         <img src="img/close-icon.png" alt="Close">
@@ -520,6 +512,14 @@
   </section> <!--Order Maq Modal-->
   <!--////////////////////////////////////////////////-->
 
+  
+  <div class="map-block">
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1119.8632603425626!2d37.53687502995211!3d55.850060338444095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537bf9668ac29%3A0x18dfd9d5b810d58b!2z0JDQstGC0L7QvNC-0YLQvtGA0L3QsNGPINGD0LsuLCA00JAg0YHRgtGA0L7QtdC90LjQtSAyMSwg0JzQvtGB0LrQstCwLCAxMjU0Mzg!5e0!3m2!1sru!2sru!4v1544902260271" allowfullscreen></iframe>
+    </div>
+  </div> <!--Map-->
+  <!--////////////////////////////////////////////-->
+  
   <footer id="footer" class="footer">
     <div class="container footer__container">
       <div class="footer__geopoint">
@@ -536,6 +536,7 @@
   </footer> <!--Footer-->
   <!--////////////////////////////////////////////-->
 
-    
+  <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(51595415, "init", { id:51595415, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/51595415" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+  
 </body>
 </html>
