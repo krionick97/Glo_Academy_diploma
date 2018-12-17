@@ -23,27 +23,27 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    nextArrow: '<div class="arrow arrow-right"></div>',
-    prevArrow: '<div class="arrow arrow-left"></div>',
+    nextArrow: '<div class="arrow arrow-right arrow-right-1"></div>',
+    prevArrow: '<div class="arrow arrow-left arrow-left-1"></div>',
     responsive: [
       {
-        breakpoint: 1060,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           infinite: true,
           dots: true
         }
       },
       {
-        breakpoint: 680,
+        breakpoint: 992,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       },
       {
-        breakpoint: 420,
+        breakpoint: 791,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

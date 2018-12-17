@@ -1,0 +1,86 @@
+.real-projects
+  background-color: $bg-color
+  padding:
+    top: 96px
+    bottom: 100px
+  &__section-title
+    text-align: center
+    margin: 0 auto 70px
+    position: relative
+    &:after
+      +title-line()
+  &__subtitle
+    margin: 0 auto 99px
+    text-align: center
+
+  &__slider
+    position: relative
+    display: block
+    margin: 0 auto
+    max-width: 900px
+    &-item
+      outline: none
+      margin: 0 2px
+      // width: 100%
+      // display: flex
+      position: relative
+      img
+        float: left
+        width: 410px
+        height: 340px
+        margin-right: 80px
+    &-title
+      font-size: 24px
+      +semibold
+      margin-bottom: 53px
+    &-descr
+      span
+        font-size: 12px
+        color: #7f7f7f
+      p
+        margin-top: 18px
+        font-size: 16px
+    &-descrBlock > &-descr:nth-child(2)
+      margin-bottom: 60px
+
+    &-data
+      display: flex
+      justify-content: space-between
+      // min-width: 300px
+      max-width: 600px
+
+    &-button
+      position: absolute
+      bottom: 0
+      left: 490px
+      color: #ffffff
+      background-color: $button-color
+      border: none
+      width: 216px
+      height: 60px
+      &:hover 
+        background-color: lighten($button-color, 5%)
+
+.arrow
+  content: ''
+  display: block
+  width: 14px
+  height: 26px
+  position: absolute
+  // bottom: 45%
+  z-index: 1
+  // left: 50%
+  &:hover
+    cursor: pointer    
+  &-right
+    right: -120px
+    bottom: 50%
+    transform: translateY(13px)
+    background-image: url('../img/real-projects/arrow-right.png')
+    background-size: 100%
+  &-left
+    left: -120px
+    top: 50%
+    transform: translateY(-13px)
+    background-image: url('../img/real-projects/arrow-left.png')
+    background-size: 100%

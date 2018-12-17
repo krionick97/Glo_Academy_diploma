@@ -1,0 +1,63 @@
+@import 'fonts'
+@import 'mixins'
+@import 'colors'
+@import 'interface'
+@import 'var-mixin'
+@import 'header'
+@import 'header-mobile'
+@import 'main'
+@import 'var-maquette'
+@import 'real-projects'
+@import 'achivments'
+@import 'our-clients'
+@import 'footer'
+@import 'modal-callback'
+@import 'order-maq'
+@import 'modal-menu'
+
+body
+  font-family: 'Proxima Nova Regular', sans-serif
+  font-size: 14px
+
+.bg-image
+  background-image: url('../img/main-scr/main-screen-img.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-color: $text-color
+
+.container
+  width: 1170px
+  margin: auto
+
+.section-title
+  font-size: 36px
+
+.section-subtitle
+  font-size: 20px
+
+.map-block
+  .map 
+    iframe
+      width: 100%
+      height: 416px
+      vertical-align: bottom
+
+.modal
+  width: 100%
+  height: 100%
+  position: fixed
+  background-color: rgba(#000, 0.52)
+  left: 0
+  top: 0
+  z-index: 3
+
+  &__close
+    position: absolute
+    img
+      width: 16px
+      height: auto
+    &:hover
+      cursor: pointer
+
+
+@import 'media'

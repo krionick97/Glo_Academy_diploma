@@ -1,0 +1,58 @@
+.header
+  background-color: $bg-color
+  padding:
+    top: 12px
+    bottom: 10px
+    
+  &__container
+    display: flex
+    justify-content: space-between
+
+  &__menu
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 792px
+  &__menu-item
+    +bold
+    display: inline-block
+    text-decoration: none
+    color: $text-color
+    position: relative
+    z-index: 0
+    &:after
+      content: ''
+      display: block
+      width: 100%
+      height: 1px
+      background-color: #adadad
+      position: absolute
+      bottom: -1px
+      z-index: -1
+    &:hover
+      &:after
+        height: 4px
+        transition: 0.2s
+
+  &__contacts
+    display: inline-block
+    display: flex
+    flex-direction: column
+    text-align: right
+    // z-index: -1
+  &__phone
+    display: inline-block
+    text-decoration: none
+    color: $text-color
+    font-size: 17px
+    +bold
+    margin-bottom: 2px
+  &__callback
+    // opacity: 0.4
+    color: #22bac1
+    +regular
+    &:after
+    &:hover
+      &:after
+        height: 1px
+        transition: 0  

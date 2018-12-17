@@ -327,13 +327,10 @@
 .main__request {
   margin-top: 10px;
   display: inline-block;
-  width: 234px;
-  height: 360px;
+  width: 234x;
+  height: 358px;
   background-color: #ffffff;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  padding-left: 39px;
-  padding-right: 39px;
+  padding: 36px 56px;
 }
 
 .main__request-container {
@@ -1002,6 +999,9 @@ body {
   .header__menu {
     width: 690px;
   }
+  .our-clients__logos {
+    max-width: 720px;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -1037,7 +1037,7 @@ body {
   }
   .our-clients {
     padding-top: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
   .our-clients__section-title {
     margin-bottom: 60px;
@@ -1079,6 +1079,9 @@ body {
   }
   .main__item-text {
     width: 240px;
+  }
+  .main__request {
+    padding: 36px 38px;
   }
   .var-maquette {
     padding-top: 50px;
@@ -1151,11 +1154,23 @@ body {
             transform: translateY(76px);
     right: 40%;
   }
+  .arrow-right-1 {
+    bottom: 50%;
+    -webkit-transform: translateY(13px);
+            transform: translateY(13px);
+    right: -10%;
+  }
   .arrow-left {
     top: 100%;
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
     left: 40%;
+  }
+  .arrow-left-1 {
+    top: 50%;
+    -webkit-transform: translateY(-13px);
+            transform: translateY(-13px);
+    left: -10%;
   }
   .achivments {
     padding-top: 70px;
@@ -1171,10 +1186,13 @@ body {
   }
   .our-clients {
     padding-top: 60px;
-    padding-bottom: 140px;
+    padding-bottom: 70px;
   }
   .our-clients__section-title {
     margin-bottom: 60px;
+  }
+  .our-clients__logos {
+    max-width: 600px;
   }
   .our-clients__logos-wrap {
     -webkit-filter: grayscale(0);
@@ -1239,6 +1257,12 @@ body {
   .var-maquette {
     padding-top: 0;
   }
+  .arrow-right-1 {
+    right: 20%;
+  }
+  .arrow-left-1 {
+    left: 20%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1250,9 +1274,17 @@ body {
     -webkit-transform: translateY(56px);
             transform: translateY(56px);
   }
+  .arrow-right-1 {
+    -webkit-transform: translateY(13px);
+            transform: translateY(13px);
+  }
   .arrow-left {
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
+  }
+  .arrow-left-1 {
+    -webkit-transform: translateY(-13px);
+            transform: translateY(-13px);
   }
   .achivments {
     padding-top: 50px;
@@ -1292,11 +1324,22 @@ body {
     font-size: 14px;
   }
   .main__request {
+    padding: 30px 40px;
     margin-top: 12px;
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
     margin-bottom: 50px;
+  }
+  .main__request-title {
+    font-size: 16px;
+    max-width: 244px;
+  }
+  .arrow-right-1 {
+    right: 10%;
+  }
+  .arrow-left-1 {
+    left: 10%;
   }
   .var-maquette__item {
     width: 300px;
@@ -1325,7 +1368,7 @@ body {
   }
   .our-clients {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
   }
   .our-clients__section-title {
     margin-bottom: 30px;
