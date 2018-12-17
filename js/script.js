@@ -90,7 +90,7 @@ $(document).ready(function () {
     event.preventDefault();
       $.ajax({
         type: "POST",
-        url: "../Glo_Academy_diploma/mailer/PHPmailer/smart.php",
+        url: "../mailer/PHPmailer/smart.php",
         data: $(this).serialize(), 
       }).done(function() {
         $(this).find("input").val("");

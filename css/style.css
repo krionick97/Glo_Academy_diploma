@@ -739,10 +739,6 @@
   display: none;
 }
 
-.map-block div iframe {
-  vertical-align: bottom;
-}
-
 .footer {
   background-color: #000000;
   padding-top: 50px;
@@ -948,9 +944,10 @@ body {
   font-size: 20px;
 }
 
-.map iframe {
+.map-block div iframe {
   width: 100%;
   height: 416px;
+  vertical-align: bottom;
 }
 
 .modal {
