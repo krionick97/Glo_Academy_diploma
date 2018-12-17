@@ -739,6 +739,10 @@
   display: none;
 }
 
+.map-block div iframe {
+  vertical-align: bottom;
+}
+
 .footer {
   background-color: #000000;
   padding-top: 50px;
