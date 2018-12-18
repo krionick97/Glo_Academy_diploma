@@ -916,6 +916,62 @@
   right: 20px;
 }
 
+.overlay {
+  display: none;
+}
+
+.overlay_visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay__dialog {
+  border-radius: 10px;
+  width: 600px;
+  height: 200px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: inline-block;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.overlay__title {
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.overlay__title span {
+  font-size: 30px;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: bold;
+}
+
+.overlay__button {
+  position: absolute;
+  width: 200px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #23bac1;
+  border: none;
+  left: 50%;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+}
+
+.overlay__button:hover {
+  background-color: #27cfd7;
+}
+
 body {
   font-family: 'Proxima Nova Regular', sans-serif;
   font-size: 14px;
@@ -1263,6 +1319,9 @@ body {
   .arrow-left-1 {
     left: 20%;
   }
+  .overlay__dialog {
+    width: 480px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1304,6 +1363,13 @@ body {
   }
   .achivments__item {
     margin-bottom: 50px;
+  }
+  .overlay__dialog {
+    width: 300px;
+    padding-bottom: 6px;
+  }
+  .overlay__title {
+    margin-bottom: 30px;
   }
 }
 

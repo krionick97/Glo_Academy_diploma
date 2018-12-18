@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $('.modal-menu').hide();
+  $('.overlay').hide();
   
   $('.input-phone').mask('+7 (999) 999-99-99');
 
@@ -86,20 +87,20 @@ $(document).ready(function () {
     });
     
     
-  $('.form').submit(function(event) {    
-    event.preventDefault();
-      $.ajax({
-        type: "POST",
-        url: "../mailer/PHPmailer/smart.php",
-        data: $(this).serialize(), 
-      }).done(function() {
-        $(this).find("input").val("");
-        alert("Форма отправлена. Спасибо!");
-        $(".form").trigger("reset");
-      });
-      return false;
-    });
-    
+  // $('.form').submit(function(event) {    
+  //   event.preventDefault();
+  //     $.ajax({
+  //       type: "POST",
+  //       url: "Glo_Academy_diploma/mailer/PHPmailer/smart.php",
+  //       data: $(this).serialize(), 
+  //     }).done(function() {
+  //       $(this).find("input").val("");
+  //       alert("Форма отправлена. Спасибо!");
+  //       $(".form").trigger("reset");
+  //     });
+  //     return false;
+  //   });
+      
   $('.header__menu a, .modal-menu__menu a').pageNav();
     
   }); //Document Ready

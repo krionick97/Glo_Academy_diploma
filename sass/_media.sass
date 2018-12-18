@@ -239,7 +239,11 @@
         right: 20%
     &-left
       &-1
-        left: 20%   
+        left: 20%
+
+  .overlay
+    &__dialog
+      width: 480px
 
 
 @media (max-width: 600px)
@@ -270,6 +274,14 @@
       align-items: center
     &__item
       margin-bottom: 50px
+
+  .overlay
+    &__dialog
+      width: 300px
+      padding-bottom: 6px
+    &__title
+      margin-bottom: 30px
+
 
 
 @media (max-width: 480px)
@@ -336,9 +348,6 @@
       width: 222px
       &-title
         font-size: 20px
-
-
-
 
   .footer
     padding:

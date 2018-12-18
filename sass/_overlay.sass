@@ -1,0 +1,35 @@
+.overlay
+  display: none
+  &_visible
+    display: flex
+    justify-content: center
+    align-items: center
+  &__dialog
+    border-radius: 10px
+    width: 600px
+    height: 200px
+    padding-top: 20px
+    padding-bottom: 30px
+    display: inline-block
+    background-color: #ffffff
+    position: relative
+  &__title
+    font-size: 24px
+    line-height: 1.5
+    text-align: center
+    margin-bottom: 50px
+    span
+      font-size: 30px
+      +bold
+  &__button
+    position: absolute
+    width: 200px
+    border-radius: 5px
+    color: #ffffff
+    background-color: $button-color
+    border: none
+    left: 50%
+    transform: translateX(-100px)
+    // margin-bottom: 40px
+    &:hover 
+      background-color: lighten($button-color, 5%)
